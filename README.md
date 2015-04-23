@@ -1,4 +1,5 @@
 # COMA-HEADER-VID
 
-Responsive header video
-IE8 compatible
+cross-browser responsive header video
+
+// IE8 compatible
