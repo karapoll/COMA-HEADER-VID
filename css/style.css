@@ -1,0 +1,140 @@
+/********************************************************************************
+ Basics                                                                        
+*********************************************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #2e3842;
+}
+
+h1, h2, h3 {
+    margin-bottom: .35rem;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #2e3842;
+    border-bottom: 1px dotted #2e3842;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+iframe, video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+/********************************************************************************
+ Layout                                                                        
+*********************************************************************************/
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.header-video {
+    position: relative;
+    overflow: hidden;
+}
+
+.teaser-video {
+    width: 100%;
+    height: auto; 
+}
+
+.header-video-media {
+    width: 100%;
+    height: auto;
+}
+
+.video-trigger {
+    z-index: 5;
+    position: absolute;
+    background: #a61212;
+    font-size: .9rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 15%;
+    height: 3.75rem;
+    top: 0;
+    z-index: 5;
+    left: 50%;
+    line-height: 3.75rem;
+    margin-left: -7.5%;
+    top: 50%;
+    margin-top: -1.875rem;
+    -webkit-transition: background .3s;
+    -moz-transition: background .3s;
+    transition: background .3s;
+}
+
+    .video-trigger:hover {
+        background: #363636;
+    }
+
+.video-close-trigger {
+    z-index: 99;
+    position: absolute;
+    font-size: .9rem;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 15%;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    top: 1.25rem;
+    right: 2%;
+    /*background: #a61212;*/
+    -webkit-transition: background .3s;
+    -moz-transition: background .3s;
+    transition: background .3s;
+    border: none;
+}
+
+    .video-close-trigger:hover {
+        background: #a61212;
+        cursor: pointer;
+    }
